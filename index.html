@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Smart Municipal Waste Reporting</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>EcoTrack</h1>
+        <p>Smart Municipal Waste Reporting System</p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#report">Report Waste</a> |
+            <a href="#track">Track Reports</a> |
+            <a href="#dashboard">Dashboard</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <h2>Keep Your City Clean and Green!</h2>
+
+        <p>
+            Report garbage problems in your locality and help
+            create a cleaner, healthier environment for everyone.
+        </p>
+
+        <a href="#report">Report Waste Now</a>
+        <br><br>
+        <a href="#track">Track Your Complaint</a>
+
+        <h2>How It Works</h2>
+
+        <article>
+            <h3>1. Report Waste</h3>
+            <p>Report overflowing dustbins and garbage dumping.</p>
+        </article>
+
+        <article>
+            <h3>2. Track Progress</h3>
+            <p>Check the status of your submitted complaint.</p>
+        </article>
+
+        <article>
+            <h3>3. Cleaner City</h3>
+            <p>Support a cleaner and greener community.</p>
+        </article>
+
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to encourage citizens to participate
+            in waste management and improve city cleanliness.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- REPORT WASTE PAGE -->
+    <section id="report">
+        <h2>Report Waste</h2>
+
+        <p>Fill out the form to report a waste-related problem.</p>
+
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="location">Location:</label><br>
+            <input type="text" id="location" name="location"
+                   placeholder="Enter street or area" required>
+            <br><br>
+
+            <label for="waste">Waste Category:</label><br>
+            <select id="waste" name="waste" required>
+                <option value="">Select category</option>
+                <option value="wet">Wet Waste</option>
+                <option value="dry">Dry Waste</option>
+                <option value="bin">Overflowing Dustbin</option>
+                <option value="dumping">Illegal Waste Dumping</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="description">Describe the Problem:</label><br>
+            <textarea id="description" name="description"
+                      rows="5" cols="35"
+                      placeholder="Enter problem details"
+                      required></textarea>
+            <br><br>
+
+            <label for="photo">Upload Photo:</label><br>
+            <input type="file" id="photo" name="photo"
+                   accept="image/*">
+            <br><br>
+
+            <button type="submit">Submit Report</button>
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- TRACK REPORTS PAGE -->
+    <section id="track">
+        <h2>Track Your Reports</h2>
+
+        <p>Enter your complaint ID to check its status.</p>
+
+        <form action="#" method="get">
+            <label for="complaint-id">Complaint ID:</label><br>
+            <input type="text" id="complaint-id"
+                   name="complaint-id"
+                   placeholder="Example: ECO1001" required>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <h3>Sample Complaint Records</h3>
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Complaint ID</th>
+                    <th>Location</th>
+                    <th>Waste Type</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ECO1001</td>
+                    <td>Civil Lines</td>
+                    <td>Overflowing Dustbin</td>
+                    <td>10 Oct 2026</td>
+                    <td>Pending</td>
+                </tr>
+
+                <tr>
+                    <td>ECO1002</td>
+                    <td>Kakadeo</td>
+                    <td>Dry Waste</td>
+                    <td>11 Oct 2026</td>
+                    <td>In Progress</td>
+                </tr>
+
+                <tr>
+                    <td>ECO1003</td>
+                    <td>Swaroop Nagar</td>
+                    <td>Illegal Dumping</td>
+                    <td>12 Oct 2026</td>
+                    <td>Resolved</td>
+                </tr>
+
+                <tr>
+                    <td>ECO1004</td>
+                    <td>Kidwai Nagar</td>
+                    <td>Wet Waste</td>
+                    <td>13 Oct 2026</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Note: These are sample records for demonstration.</p>
+    </section>
+
+    <hr>
+
+    <!-- DASHBOARD PAGE -->
+    <section id="dashboard">
+        <h2>Waste Reporting Dashboard</h2>
+
+        <p>Overview of sample waste complaints and their status.</p>
+
+        <h3>Complaint Statistics</h3>
+
+        <article>
+            <h4>Total Reports</h4>
+            <p>120</p>
+        </article>
+
+        <article>
+            <h4>Pending Reports</h4>
+            <p>35</p>
+        </article>
+
+        <article>
+            <h4>In Progress</h4>
+            <p>25</p>
+        </article>
+
+        <article>
+            <h4>Resolved Reports</h4>
+            <p>60</p>
+        </article>
+
+        <h3>Waste Category Statistics</h3>
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Waste Category</th>
+                    <th>Number of Reports</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Wet Waste</td>
+                    <td>30</td>
+                </tr>
+
+                <tr>
+                    <td>Dry Waste</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>Overflowing Dustbins</td>
+                    <td>40</td>
+                </tr>
+
+                <tr>
+                    <td>Illegal Waste Dumping</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Recent Reports</h3>
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Complaint ID</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ECO1001</td>
+                    <td>Civil Lines</td>
+                    <td>Pending</td>
+                </tr>
+
+                <tr>
+                    <td>ECO1002</td>
+                    <td>Kakadeo</td>
+                    <td>In Progress</td>
+                </tr>
+
+                <tr>
+                    <td>ECO1003</td>
+                    <td>Swaroop Nagar</td>
+                    <td>Resolved</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 EcoTrack - Smart Waste Reporting System</p>
+        <p>Working Towards a Cleaner and Greener City.</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
